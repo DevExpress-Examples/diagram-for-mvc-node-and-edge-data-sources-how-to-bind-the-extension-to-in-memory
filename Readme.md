@@ -21,4 +21,8 @@ You should add mapping information for a shape's  [Key](https://docs.devexpress.
 
 The  [BatchUpdateRouteValues](https://docs.devexpress.com/AspNet/DevExpress.Web.Mvc.DiagramSettings.BatchUpdateRouteValues)  property specifies a Controller and Action that handle callbacks related to node and edge updates. When you update inserted items' data, use the  [MapInsertedItemKey](https://docs.devexpress.com/AspNet/DevExpress.Web.Mvc.MVCxDiagramItemUpdateValues-2.MapInsertedItemKey(-0--1))  method to provide key values for the items.
 
-The  [SettingsAutoLayout](https://docs.devexpress.com/AspNet/DevExpress.Web.Mvc.DiagramSettings.SettingsAutoLayout)  property specifies the auto-layout algorithm and orientation the extension uses to build a diagram.
+The  [SettingsAutoLayout](https://docs.devexpress.com/AspNet/DevExpress.Web.Mvc.DiagramSettings.SettingsAutoLayout)  property specifies the auto-layout algorithm and orientation the extension uses to build a diagram.  
+
+***See also:***  
+[Diagram for MVC - Tree from Linear Data Structure - How to bind the extension to an in-memory data source](https://github.com/DevExpress-Examples/diagram-for-mvc-tree-from-linear-data-structure-how-to-bind-to-an-in-memory-data-source)  
+[Diagram for MVC - How to bind containers to an in-memory data source](https://github.com/DevExpress-Examples/diagram-for-mvc-how-to-bind-containers-to-an-in-memory-data-source)

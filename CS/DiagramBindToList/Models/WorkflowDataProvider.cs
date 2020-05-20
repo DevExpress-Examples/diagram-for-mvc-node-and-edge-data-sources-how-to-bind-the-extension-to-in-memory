@@ -31,15 +31,15 @@ namespace DiagramBindToList.Models
             {
                 data = new List<Node>
                 {
-                    new Node(1, DiagramShapeType.Terminator, "A new ticket", 96, 48),
-                    new Node(2, DiagramShapeType.Process, "Analyze the issue", 168, 72),
-                    new Node(3, DiagramShapeType.Diamond, "Do we have all information to work with?", 168, 96),
-                    new Node(4, DiagramShapeType.Terminator, "Answered", 96, 48),
-                    new Node(5, DiagramShapeType.Rectangle, "Request additional information or clarify the scenario", 144, 72),
-                    new Node(6, DiagramShapeType.Rectangle, "Prepare an example in Code Central", 168, 72),
-                    new Node(7, DiagramShapeType.Rectangle, "Update the documentation", 168, 72),
-                    new Node(8, DiagramShapeType.Rectangle, "Process the ticket", 168, 72),
-                    new Node(9, DiagramShapeType.Rectangle, "Work with the R&D team", 144, 72)
+                    new Node(1, DiagramShapeType.Terminator.ToString(), "A new ticket", 96, 48),
+                    new Node(2, DiagramShapeType.Process.ToString(), "Analyze the issue", 168, 72),
+                    new Node(3, DiagramShapeType.Diamond.ToString(), "Do we have all \ninformation \nto work with?", 168, 96, "stroke: red"),
+                    new Node(4, DiagramShapeType.Terminator.ToString(), "Answered", 96, 48, textStyle:"fill: darkgreen; font-weight: bold"),
+                    new Node(5, DiagramShapeType.Rectangle.ToString(), "Request additional information or clarify the scenario", 144, 72),
+                    new Node(6, DiagramShapeType.Rectangle.ToString(), "Prepare an example in Code Central", 168, 72),
+                    new Node(7, DiagramShapeType.Rectangle.ToString(), "Update the documentation", 168, 72),
+                    new Node(8, DiagramShapeType.Rectangle.ToString(), "Process the ticket", 168, 72),
+                    new Node(9, DiagramShapeType.Rectangle.ToString(), "Work with the R&D team", 144, 72)
                 };
                 HttpContext.Current.Session["DiagramObjects"] = data;
             }
@@ -98,6 +98,8 @@ namespace DiagramBindToList.Models
             objectToUpdate.Text = item.Text;
             objectToUpdate.Width = item.Width;
             objectToUpdate.Height = item.Height;
+            objectToUpdate.Style = item.Style;
+            objectToUpdate.TextStyle = item.TextStyle;
         }
 
         public static void UpdateConnection(Edge item)

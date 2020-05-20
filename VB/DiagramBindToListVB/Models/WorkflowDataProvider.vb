@@ -18,15 +18,15 @@ Module WorkflowDataProvider
 
         If data Is Nothing Then
             data = New List(Of Node) From {
-                New Node(1, DiagramShapeType.Terminator, "A new ticket", 96, 48),
-                New Node(2, DiagramShapeType.Process, "Analyze the issue", 168, 72),
-                New Node(3, DiagramShapeType.Diamond, "Do we have all information to work with?", 168, 96),
-                New Node(4, DiagramShapeType.Terminator, "Answered", 96, 48),
-                New Node(5, DiagramShapeType.Rectangle, "Request additional information or clarify the scenario", 144, 72),
-                New Node(6, DiagramShapeType.Rectangle, "Prepare an example in Code Central", 168, 72),
-                New Node(7, DiagramShapeType.Rectangle, "Update the documentation", 168, 72),
-                New Node(8, DiagramShapeType.Rectangle, "Process the ticket", 168, 72),
-                New Node(9, DiagramShapeType.Rectangle, "Work with the R&D team", 144, 72)
+                New Node(1, DiagramShapeType.Terminator.ToString(), "A new ticket", 96, 48),
+                New Node(2, DiagramShapeType.Process.ToString(), "Analyze the issue", 168, 72),
+                New Node(3, DiagramShapeType.Diamond.ToString(), "Do we have all" + vbCrLf + "information" + vbCrLf + "to work with?", 168, 96, "stroke: red"),
+                New Node(4, DiagramShapeType.Terminator.ToString(), "Answered", 96, 48, textStyle:="fill: darkgreen; font-weight: bold"),
+                New Node(5, DiagramShapeType.Rectangle.ToString(), "Request additional information or clarify the scenario", 144, 72),
+                New Node(6, DiagramShapeType.Rectangle.ToString(), "Prepare an example in Code Central", 168, 72),
+                New Node(7, DiagramShapeType.Rectangle.ToString(), "Update the documentation", 168, 72),
+                New Node(8, DiagramShapeType.Rectangle.ToString(), "Process the ticket", 168, 72),
+                New Node(9, DiagramShapeType.Rectangle.ToString(), "Work with the R&D team", 144, 72)
             }
             HttpContext.Current.Session("DiagramObjects") = data
         End If
@@ -77,6 +77,8 @@ Module WorkflowDataProvider
         objectToUpdate.Text = item.Text
         objectToUpdate.Width = item.Width
         objectToUpdate.Height = item.Height
+        objectToUpdate.Style = item.Style
+        objectToUpdate.TextStyle = item.TextStyle
     End Sub
 
     Sub UpdateConnection(ByVal item As Edge)

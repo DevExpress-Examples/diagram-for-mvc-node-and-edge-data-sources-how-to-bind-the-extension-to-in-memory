@@ -12,6 +12,8 @@ End Code
                                     settings.Mappings.Node.Text = "Text"
                                     settings.Mappings.Node.Width = "Width"
                                     settings.Mappings.Node.Height = "Height"
+                                    settings.Mappings.Node.Style = "Style"
+                                    settings.Mappings.Node.TextStyle = "TextStyle"
 
                                     settings.Mappings.Edge.Key = "ID"
                                     settings.Mappings.Edge.FromKey = "FromID"

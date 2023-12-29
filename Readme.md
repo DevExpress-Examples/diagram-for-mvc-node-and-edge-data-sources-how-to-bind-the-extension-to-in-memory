@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Diagram for MVC - Node and Edge data sources - How to bind the extension to in-memory data sources
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/240053564/)**
-<!-- run online end -->
 
 The DevExpress ASP.NET MVC  [Diagram](https://docs.devexpress.com/AspNet/DevExpress.Web.Mvc.DiagramExtension)  extension provides the  [Bind(object nodeDataObject, object edgeDataObject)](https://docs.devexpress.com/AspNet/DevExpress.Web.Mvc.DiagramExtension.Bind(System.Object-System.Object))  method that allows you to load a tree or a graph structure from two data sources: the  **nodeDataObject**  for shapes and  **edgeDataObject**  for shape connectors.
 

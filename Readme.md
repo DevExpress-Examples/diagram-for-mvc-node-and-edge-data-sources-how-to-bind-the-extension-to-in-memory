@@ -33,7 +33,7 @@ The  [SettingsAutoLayout](https://docs.devexpress.com/AspNet/DevExpress.Web.Mvc.
 [Diagram for MVC - Tree from Linear Data Structure - How to bind the extension to an in-memory data source](https://github.com/DevExpress-Examples/diagram-for-mvc-tree-from-linear-data-structure-how-to-bind-to-an-in-memory-data-source)  
 [Diagram for MVC - How to bind containers to an in-memory data source](https://github.com/DevExpress-Examples/diagram-for-mvc-how-to-bind-containers-to-an-in-memory-data-source)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=diagram-for-mvc-node-and-edge-data-sources-how-to-bind-the-extension-to-in-memory&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=diagram-for-mvc-node-and-edge-data-sources-how-to-bind-the-extension-to-in-memory&~~~was_helpful=no)
 
